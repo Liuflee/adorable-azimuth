@@ -1,0 +1,14 @@
+---
+// Definir los props que el componente aceptará
+export interface Props {
+  title: string;
+  description: string;
+  imageUrl: string; // Nueva prop para la URL de la imagen
+}
+
+const { title, description, imageUrl } = Astro.props;
+---
+<div class="p-4 shadow rounded" style={`background-image: url(${imageUrl}); background-size: cover; background-position: center;`}>
+    <h3 class="text-xl font-bold bg-white bg-opacity-70 p-2 rounded">{title}</h3>
+    <p class="mt-2 bg-white bg-opacity-70 p-2 rounded">{description}</p>
+</div>

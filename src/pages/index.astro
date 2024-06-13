@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import MainImage from '../components/MainImage.astro';
-import ChaosNews from '../components/ChaosNews.astro';
+import Proyectos from '../sections/Proyectos.astro';
 import Footer from '../components/Footer.astro';
 ---
 
@@ -15,21 +15,21 @@ import Footer from '../components/Footer.astro';
 		<main class="p-4">
 		  <section class="my-8 text-center text-white">
 			<h2 class="text-2xl font-semibold">Sobre mí</h2>
-			<p class="mt-2">Soy Anette, una estudiante de Ingeniería en Informática...</p>
+			<p class="mt-2">denme pega porfa</p>
 		  </section>
-	
-		  <section class="my-8">
-			<h2 class="text-2xl font-semibold text-white">Proyectos</h2>
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-			  <!-- Repite este bloque para cada proyecto -->
-
-				<ChaosNews />
-
-			  <!-- Fin del bloque de proyecto -->
-			</div>
-
+		  
+		  <Proyectos />
+		  
+		  <section class="my-8 text-center text-white">
+			<h2 class="text-2xl font-semibold">Experiencia</h2>
+			<ul>
+			  <li>21 años flojeando en mi casa</a></li>
+			  <li>5 años jugando Apex Legends</a></li>
+			  <li>10 años cagandome en los compañeros de equipo</a></li>			
+			</ul>
 
 		  </section>
+
 		</main>
 	
 		<Footer></Footer>
